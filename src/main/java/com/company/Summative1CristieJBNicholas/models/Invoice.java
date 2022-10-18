@@ -7,13 +7,11 @@ public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "invoice_id")//PK
-    private Integer id;
+    private Integer invoice_id;
     @Column(name = "firstname")
     private String firstName;
     @Column(name = "lastname")
     private String lastName;
-
-    //    @JoinColumn(name = "address")
     @Column(name = "street")
     private String street;
     @Column(name = "city")
@@ -22,11 +20,23 @@ public class Invoice {
     private String state;
     @Column(name = "zipcode")
     private String zipcode;
+    @Column(name="item_id")
+    private Integer item_id;
+    @Column(name="item_type")
+    private String item_type;
+    @Column(name="unit_price")
+    private double unit_price;
+    @Column(name="quantity")
+    private int quantity;
+    @Column(name="processing_fee")
+    private double processing_fee;
+    @Column(name="tax")
+    private double tax;
+    @Column(name="total")
+    private double total;
 
 
     public Invoice(){}
-
-
 }
 // invoice_id int not null auto_increment primary key,
 //    name varchar(80) not null,
