@@ -1,7 +1,6 @@
 package com.company.Summative1CristieJBNicholas.models;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 public class Invoice {
     @Id
