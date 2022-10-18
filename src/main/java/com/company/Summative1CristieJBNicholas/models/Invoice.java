@@ -8,9 +8,9 @@ public class Invoice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "invoice_id")//PK
     private Integer invoice_id;
-    @Column(name = "firstname")
-    private String firstName;
-    @Column(name = "lastname")
+    @Column(name = "name")
+    private String name;
+
     private String lastName;
     @Column(name = "street")
     private String street;
@@ -52,3 +52,9 @@ public class Invoice {
 //    tax decimal(5,2) not null,
 //    processing_fee decimal (5,2) not null,
 //    total decimal(5,2) not null
+//
+//Create
+//   Read
+//  Read All
+//  By Customer Name
+
